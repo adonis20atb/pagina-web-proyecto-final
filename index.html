@@ -3,92 +3,118 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Delicius cockies</title>
+    <title>Delicious Cookies - Tienda de Galletas</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header class="header">
-    <div class=" menu container">
-
-    <a href="#" class="LOGO">LOGO</a>
-   <input type="checkbox"  id="menu"/>
-     <label for="menu">
-        <img src="IMAGEN MENU" class="menu" alt="menu">
-     </label>
-     <nav class="navbar">
+    <div class="menu container">
+      <a href="#" class="LOGO">Delicious Cookies</a>
+      <input type="checkbox" id="menu"/>
+      <label for="menu">
+        <img src="menu.png" class="menu" alt="menu">
+      </label>
+      <nav class="navbar">
         <ul>
-            <li><a href="#">inicio</a></li>
-            <li><a href="#">servicios</a></li>
-            <li><a href="#">productos</a></li>
-            <li><a href="#">contactos</a></li>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#productos">Productos</a></li>
+          <li><a href="#eventos">Eventos</a></li>
+          <li><a href="#contacto">Contacto</a></li>
         </ul>
-     </nav>
+      </nav>
     </div>
-   <div class="header-content container"> 
-    <div class="header-txt">
-        <h1>el mejor menu que pueda existir</h1>
-        <p> Las galletas son un delicioso manjar que ha conquistado los paladares de todo el mundo.
-             Con una amplia variedad de sabores, texturas y formas, 
-             .</p>
-             <a href="#" class="btn-1">informacion</a>
+    <div class="header-content container"> 
+      <div class="header-txt">
+        <h1>El mejor menú de galletas que puedas imaginar</h1>
+        <p>Desde 2010, endulzamos tus días con galletas artesanales hechas con ingredientes de la más alta calidad. ¡Descubre nuestra variedad de sabores y texturas!</p>
+        <a href="#productos" class="btn-1">Explorar Productos</a>
+      </div>
+      <div class="header-img">
+        <img src="ha2.png" alt="Galletas Deliciosas">
+      </div>
     </div>
-    <div class="header-img">
-    <img src="imagen" alt="">
-    </div>
-   </div>
   </header> 
-<section class="informacion">
 
-<div   class="informacion-content container">
-    <div class="informacion-box">
+  <section id="productos" class="informacion">
+    <div class="informacion-content container">
+      <h2>Nuestros Productos</h2>
+      <div class="informacion-box">
         <div class="card-1"> 
-            <img src="imagen" alt="">
-            <h3>Galletas</h3>
-            <p>calidad Premium</p>
-            <span>$50.00</span>
+          <img src="c1.png" alt="Galletas de Chocolate Chip">
+          <h3>Galletas de Chocolate Chip</h3>
+          <p>Clásicas y deliciosas, hechas con trozos de chocolate premium.</p>
+          <span>$50.00</span>
         </div>
         <div class="card-1"> 
-            <img src="imagen2" alt="">
-            <h3>Galletas</h3>
-            <p>calidad Premium</p>
-            <span>$50.00</span>
+          <img src="c2.png" alt="Galletas de Vainilla">
+          <h3>Galletas de Vainilla</h3>
+          <p>Suaves y esponjosas, perfectas para acompañar tu café.</p>
+          <span>$50.00</span>
         </div>
+      </div>
+      <div class="informacion-txt">
+        <h2>Personaliza tu pedido</h2>
+        <p>Ofrecemos opciones de personalización para que tus galletas sean únicas. Escoge el tamaño, sabor, decoración y empaque.</p>
+        <a href="#contacto" class="btn-1">Haz tu pedido</a>
+      </div>
     </div>
-<div class="informacion-txt">
- <h2> puedes venir a nuestros establecimiento o por la app</h2>
- <p>
-    Hornear galletas es una actividad que evoca momentos de calidez y hogar. La mezcla de ingredientes como la harina, el azúcar, la mantequilla y
-     el huevo se convierte en una masa que, al ser horneada, llena la casa con un aroma irresistible
- </p>
+  </section> 
 
-</div>
-
-
-
-</div>
-
- </section> 
- <section class="general">
-
+  <section id="eventos" class="general">
     <div class="general-content container">
-<div class="general-img">
-            <img src="imagen3" alt="">
-         </div>
-   <div class="general-txt"> 
-    <h2></h2>
-    <p> Además de ser deliciosas, las galletas tienen un valor simbólico,
-         ya que son un regalo perfecto para cualquier ocasión,
-         desde una celebración especial hasta un gesto cariñoso.
-        </p>
-        <a href="#" class="btn-1">informacion</a>
-         </div>
+      <div class="general-img">
+        <img src="ha1.png" alt="Eventos de Galletas">
+      </div>
+      <div class="general-txt"> 
+        <h2>Eventos y Talleres</h2>
+        <p>Únete a nuestros talleres de repostería y aprende a hacer galletas decoradas. También organizamos eventos temáticos como "Noche de Galletas y Vino".</p>
+        <a href="#contacto" class="btn-1">Más Información</a>
+      </div>
     </div>
- </section>
- <section class="app">
-    <div>
-        
-    </div>
+  </section>
 
- </section>
+  <section class="app">
+    <div class="app-content container">  
+      <div class="app-img">       
+        <img src="app.png" alt="Descarga nuestra APP">  
+      </div>        
+      <div class="app-txt">       
+        <h2>Descarga nuestra APP</h2>     
+        <p>Haz tus pedidos desde la comodidad de tu hogar, recibe ofertas exclusivas y acumula puntos con nuestro programa de fidelidad.</p>             
+        <div class="app-icons">
+          <a href="#"><img src="google-play.png" alt="Google Play"></a>
+          <a href="#"><img src="app-store.png" alt="App Store"></a>
+        </div>      
+      </div>  
+    </div>
+  </section>
+
+  <footer id="contacto" class="footer">
+    <div class="footer-content container">
+      <div class="link">
+        <h3>Contacto</h3>
+        <ul>
+          <li><a href="#">Dirección: Calle Galleta 123, Ciudad</a></li>
+          <li><a href="#">Teléfono: +123 456 789</a></li>
+          <li><a href="#">Email: info@deliciouscookies.com</a></li>
+        </ul>
+      </div>
+      <div class="link">
+        <h3>Redes Sociales</h3>
+        <ul>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Twitter</a></li>
+        </ul>
+      </div>
+      <div class="link">
+        <h3>Horarios</h3>
+        <ul>
+          <li>Lunes a Viernes: 9:00 - 18:00</li>
+          <li>Sábados: 10:00 - 16:00</li>
+        </ul>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
