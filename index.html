@@ -33,43 +33,69 @@
                 <a href="#productos" class="btn-1">Explorar Productos</a>
             </div>
             <div class="header-img">
-                <img src="ha2.png" alt="Galletas Deliciosas">
+               
             </div>
         </div>
     </header>
 
     <!-- Sección de Productos -->
-    <section id="productos" class="productos">
-        <h2>Nuestros Productos</h2>
-        <div class="search-filter">
-            <input type="text" id="search-bar" placeholder="Buscar productos..." onkeyup="filterProducts()">
-            <select id="category-filter" onchange="filterProducts()">
-                <option value="all">Todas las Categorías</option>
-                <option value="chocolate">Chocolate</option>
-                <option value="vainilla">Vainilla</option>
-                <option value="veganas">Veganas</option>
-                <option value="sin-gluten">Sin Gluten</option>
-            </select>
+<section id="productos" class="productos">
+    <h2>Nuestros Productos</h2>
+    <div class="search-filter">
+        <input type="text" id="search-bar" placeholder="Buscar productos..." onkeyup="filterProducts()">
+        <select id="category-filter" onchange="filterProducts()">
+            <option value="all">Todas las Categorías</option>
+            <option value="chocolate">Chocolate</option>
+            <option value="vainilla">Vainilla</option>
+            <option value="veganas">Veganas</option>
+            <option value="sin-gluten">Sin Gluten</option>
+        </select>
+    </div>
+    <div class="productos-grid">
+        <div class="producto-card" data-category="chocolate">
+            <img src="c1.png" alt="Galletas de Chocolate Chip">
+            <h3>Galletas de Chocolate Chip</h3>
+            <p>Clásicas y deliciosas, hechas con trozos de chocolate premium que se derriten en tu boca. Perfectas para cualquier momento del día.</p>
+            <span>$50.00</span>
+            <button class="btn-add-to-cart" onclick="addToCart('Galletas de Chocolate Chip', 50)">Añadir al Carrito</button>
         </div>
-        <div class="productos-grid">
-            <div class="producto-card" data-category="chocolate">
-                <img src="c1.png" alt="Galletas de Chocolate Chip">
-                <h3>Galletas de Chocolate Chip</h3>
-                <p>Clásicas y deliciosas, hechas con trozos de chocolate premium que se derriten en tu boca. Perfectas para cualquier momento del día.</p>
-                <span>$50.00</span>
-                <button class="btn-add-to-cart" onclick="addToCart('Galletas de Chocolate Chip', 50)">Añadir al Carrito</button>
-            </div>
-            <div class="producto-card" data-category="vainilla">
-                <img src="c2.png" alt="Galletas de Vainilla">
-                <h3>Galletas de Vainilla</h3>
-                <p>Suaves y esponjosas, estas galletas son el acompañamiento ideal para tu café o té. Un clásico que nunca pasa de moda.</p>
-                <span>$50.00</span>
-                <button class="btn-add-to-cart" onclick="addToCart('Galletas de Vainilla', 50)">Añadir al Carrito</button>
-            </div>
-            <!-- Añadir más productos aquí -->
+        <div class="producto-card" data-category="vainilla">
+            <img src="c2.png" alt="Galletas de Vainilla">
+            <h3>Galletas de Vainilla</h3>
+            <p>Suaves y esponjosas, estas galletas son el acompañamiento ideal para tu café o té. Un clásico que nunca pasa de moda.</p>
+            <span>$50.00</span>
+            <button class="btn-add-to-cart" onclick="addToCart('Galletas de Vainilla', 50)">Añadir al Carrito</button>
         </div>
-    </section>
-
+        <div class="producto-card" data-category="veganas">
+            <img src="c3.png" alt="Galletas Veganas">
+            <h3>Galletas Veganas</h3>
+            <p>Deliciosas galletas sin ingredientes de origen animal, perfectas para quienes buscan opciones saludables y sabrosas.</p>
+            <span>$60.00</span>
+            <button class="btn-add-to-cart" onclick="addToCart('Galletas Veganas', 60)">Añadir al Carrito</button>
+        </div>
+        <div class="producto-card" data-category="sin-gluten">
+            <img src="c4.png" alt="Galletas Sin Gluten">
+            <h3>Galletas Sin Gluten</h3>
+            <p>Galletas crujientes y sabrosas, elaboradas sin gluten, ideales para quienes tienen intolerancia.</p>
+            <span>$70.00</span>
+            <button class="btn-add-to-cart" onclick="addToCart('Galletas Sin Gluten', 70)">Añadir al Carrito</button>
+        </div>
+        <div class="producto-card" data-category="chocolate">
+            <img src="c5.png" alt="Galletas de Doble Chocolate">
+            <h3>Galletas de Doble Chocolate</h3>
+            <p>Para los amantes del chocolate, estas galletas son una explosión de sabor con chocolate en cada bocado.</p>
+            <span>$55.00</span>
+            <button class="btn-add-to-cart" onclick="addToCart('Galletas de Doble Chocolate', 55)">Añadir al Carrito</button>
+        </div>
+        <div class="producto-card" data-category="vainilla">
+            <img src="c6.png" alt="Galletas de Vainilla con Chispas de Chocolate">
+            <h3>Galletas de Vainilla con Chispas de Chocolate</h3>
+            <p>Una combinación perfecta de vainilla suave y chispas de chocolate, ideales para cualquier ocasión.</p>
+            <span>$65.00</span>
+            <button class="btn-add-to-cart" onclick="addToCart('Galletas de Vainilla con Chispas de Chocolate', 65)">Añadir al Carrito</button>
+        </div>
+    </div>
+</section>
 
 
     <!-- Carrito de Compras -->
@@ -119,6 +145,6 @@
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="ja.js"></script>
 </body>
 </html>
