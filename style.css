@@ -12,7 +12,7 @@
 
 body{
     font-family: 'Poppins' sans-serif;
-    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSehWENcIYgGa1vXqSL8qbO834mge9R0K-ECQ&s);
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3i416iiDxX_HhCLBOstYsG87BSiPp9BQJTw&s);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -22,7 +22,7 @@ body{
 }
 
 img{
-    max-width: 100%;
+    max-width: 50%;
 }
 
 .container {
@@ -32,7 +32,7 @@ img{
 
 .header {
     display: flex;
-    align-items: center;
+    align-items: right;
     min-height: 80vh;
     padding: 50px 0 0 0 ;
     background-color: rgba(255, 255, 255, 0.808);
@@ -102,13 +102,13 @@ img{
 .header-txt h1 {
     font-size: 100px;
     line-height: 1;
-    color: #040100;
+    color: #000000;
     font-family: 'Times New Roman', Times, serif;
     margin-bottom: 25px;
 }
 
 p {
-    color: #232323;
+    color: #000000;
     font-size: 17px;
     margin-bottom: 35px;
 
@@ -161,4 +161,247 @@ p {
     margin-right: 50px;
     text-align: center;
     padding: 20px;
+}
+
+.card-1 img {
+    width: 150px;
+    margin-top: -70px;
+}
+
+.card-1 h3 {
+    font-size: 20px;
+    margin: 0 0 10px 0;
+    color: #684f47;
+}
+
+.card-1 p {
+    margin-bottom: 10px;
+}
+
+.card-1 span {
+    color: #e22717;
+    font-weight: 700;
+}
+
+.information-text {
+    flex-basis: 50%;
+}
+
+h2 {
+    color: #040100;
+    font-size: 40px;
+    line-height: 1;
+    margin-bottom: 30px;
+}
+
+.general {
+    padding: 50px 0;
+    background-color: rgba(255, 255, 255, 0.808);
+}
+
+.general-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.general-txt {
+    flex-basis: 50%;
+    margin: 0 50px;
+}
+
+.general-img {
+    text-align: center;
+    flex-basis: 50%;
+}
+
+.app {
+    padding: 50px 0;
+    background-color: rgba(255, 255, 255, 0.808);
+}
+
+.app-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.app-img {
+    flex-basis: 50%;
+    text-align: center;
+}
+.app-img img {
+    width: 300px;
+}
+.app-txt {
+    flex-basis: 50%;
+}
+
+.app-icons img {
+    width: 150px;
+}
+
+.contact {
+    padding: 50px 0;
+    background-color: rgba(255, 255, 255, 0.808);
+}
+
+.contact-content {
+    text-align: center;
+    padding: 0 100px;
+}
+
+.footer {
+    padding: 100px 0 50px 0;
+    background-color: rgba(255, 255, 255, 0.808);
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.link h3 {
+    color: #040100;
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+
+.link a {
+    font-size: 17px;
+    color: #040100;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.link a:hover {
+    color: #e22717;
+}
+
+@media (max-width:991px) {
+
+    .menu {
+        padding: 20px;
+    }
+
+    .menu label{
+        display: initial;
+    }
+
+    .menu .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #ffbd4c;
+        display: none;
+    }
+
+    .menu .navbar ul li {
+        width: 100%;
+    }
+
+    #menu:checked ~ .navbar {
+        display: initial;
+    }
+
+    .header {
+        min-height: 0vh;
+        padding: 80px 0 30px 0;
+    }
+
+    .header-content {
+        padding: 20px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header-txt {
+        margin-bottom: 35px;
+    }
+
+    .header-txt h1 {
+        font-size: 80px;
+    }
+
+    .header-img {
+        text-align: center;
+    }
+
+    .header-img img {
+        width: 100%;
+}
+.information {
+    padding: 20px;
+}
+
+.information-content {
+    flex-direction: column;
+    text-align: center;
+}
+
+.information-box {
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.card-1 {
+    flex-basis: calc(50% - 20px);
+    margin: 0 10px;
+    padding: 20px;
+}
+
+.general {
+    padding: 0 20px 0 20px;
+}
+
+.general-content {
+    flex-direction: column;
+    text-align: center;
+}
+
+.header-txt {
+    margin: 0 0 20px 0;
+}
+
+.general-img {
+    order: 2;
+}
+
+.app {
+    padding: 20px;
+}
+
+.app-content {
+    flex-direction: column;
+    text-align: center;
+}
+.app-txt {
+    margin-bottom: 25px;
+}
+
+.app-img {
+    order: 2;
+}
+
+.app-img img {
+    width: 50%;
+}
+
+.contact {
+    padding: 20px;
+}
+
+.contact-content {
+    padding: 0;
+}
+
+.footer {
+    padding: 20px;
+}
+
+.footer-content {
+    flex-direction: column;
+    text-align: center;
+}
 }
