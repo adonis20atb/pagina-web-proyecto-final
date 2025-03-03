@@ -5,14 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Delicious Cookies - Tienda de Galletas</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
+    <!-- Header -->
     <header class="header">
         <div class="menu container">
             <a href="#" class="logo">Delicious Cookies</a>
             <input type="checkbox" id="menu"/>
             <label for="menu">
-                <img src="menu.png" class="menu-icono" alt="menu">
+                <i class="fas fa-bars menu-icono"></i>
             </label>
             <nav class="navbar">
                 <ul>
@@ -20,14 +22,14 @@
                     <li><a href="#productos">Productos</a></li>
                     <li><a href="#eventos">Eventos</a></li>
                     <li><a href="#contacto">Contacto</a></li>
-                    <li><a href="#carrito" id="cart-icon">🛒 <span id="cart-count">0</span></a></li>
+                    <li><a href="#carrito" id="cart-icon"><i class="fas fa-shopping-cart"></i> <span id="cart-count">0</span></a></li>
                 </ul>
             </nav>
         </div>
         <div class="header-content container">
             <div class="header-txt">
-                <h1>El mejor menú de galletas que puedas imaginar</h1>
-                <p>Desde 2010, endulzamos tus días con galletas artesanales hechas con ingredientes de la más alta calidad. ¡Descubre nuestra variedad de sabores y texturas!</p>
+                <h1>¡Descubre el Sabor de la Felicidad!</h1>
+                <p>En Delicious Cookies, cada galleta es una obra maestra. Desde 2010, nos dedicamos a crear galletas artesanales que no solo endulzan tus días, sino que también despiertan tus sentidos. Con ingredientes de la más alta calidad y una variedad de sabores irresistibles, cada bocado es una experiencia única. ¡Únete a nuestra familia de amantes de las galletas y descubre tu nuevo sabor favorito!</p>
                 <a href="#productos" class="btn-1">Explorar Productos</a>
             </div>
             <div class="header-img">
@@ -37,38 +39,38 @@
     </header>
 
     <!-- Sección de Productos -->
-    <section id="productos" class="informacion">
-        <div class="informacion-content container">
-            <h2>Nuestros Productos</h2>
-            <div class="search-filter">
-                <input type="text" id="search-bar" placeholder="Buscar productos..." onkeyup="filterProducts()">
-                <select id="category-filter" onchange="filterProducts()">
-                    <option value="all">Todas las Categorías</option>
-                    <option value="chocolate">Chocolate</option>
-                    <option value="vainilla">Vainilla</option>
-                    <option value="veganas">Veganas</option>
-                    <option value="sin-gluten">Sin Gluten</option>
-                </select>
+    <section id="productos" class="productos">
+        <h2>Nuestros Productos</h2>
+        <div class="search-filter">
+            <input type="text" id="search-bar" placeholder="Buscar productos..." onkeyup="filterProducts()">
+            <select id="category-filter" onchange="filterProducts()">
+                <option value="all">Todas las Categorías</option>
+                <option value="chocolate">Chocolate</option>
+                <option value="vainilla">Vainilla</option>
+                <option value="veganas">Veganas</option>
+                <option value="sin-gluten">Sin Gluten</option>
+            </select>
+        </div>
+        <div class="productos-grid">
+            <div class="producto-card" data-category="chocolate">
+                <img src="c1.png" alt="Galletas de Chocolate Chip">
+                <h3>Galletas de Chocolate Chip</h3>
+                <p>Clásicas y deliciosas, hechas con trozos de chocolate premium que se derriten en tu boca. Perfectas para cualquier momento del día.</p>
+                <span>$50.00</span>
+                <button class="btn-add-to-cart" onclick="addToCart('Galletas de Chocolate Chip', 50)">Añadir al Carrito</button>
             </div>
-            <div class="informacion-box">
-                <div class="card-1" data-category="chocolate">
-                    <img src="c1.png" alt="Galletas de Chocolate Chip">
-                    <h3>Galletas de Chocolate Chip</h3>
-                    <p>Clásicas y deliciosas, hechas con trozos de chocolate premium.</p>
-                    <span>$50.00</span>
-                    <button class="btn-add-to-cart" onclick="addToCart('Galletas de Chocolate Chip', 50)">Añadir al Carrito</button>
-                </div>
-                <div class="card-1" data-category="vainilla">
-                    <img src="c2.png" alt="Galletas de Vainilla">
-                    <h3>Galletas de Vainilla</h3>
-                    <p>Suaves y esponjosas, perfectas para acompañar tu café.</p>
-                    <span>$50.00</span>
-                    <button class="btn-add-to-cart" onclick="addToCart('Galletas de Vainilla', 50)">Añadir al Carrito</button>
-                </div>
-                <!-- Añadir más productos aquí -->
+            <div class="producto-card" data-category="vainilla">
+                <img src="c2.png" alt="Galletas de Vainilla">
+                <h3>Galletas de Vainilla</h3>
+                <p>Suaves y esponjosas, estas galletas son el acompañamiento ideal para tu café o té. Un clásico que nunca pasa de moda.</p>
+                <span>$50.00</span>
+                <button class="btn-add-to-cart" onclick="addToCart('Galletas de Vainilla', 50)">Añadir al Carrito</button>
             </div>
+            <!-- Añadir más productos aquí -->
         </div>
     </section>
+
+
 
     <!-- Carrito de Compras -->
     <div id="cart-modal" class="modal">
@@ -109,7 +111,7 @@
             <div class="link">
                 <h3>Redes Sociales</h3>
                 <ul>
-                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#f">Instagram</a></li>
                     <li><a href="#">Facebook</a></li>
                     <li><a href="#">Twitter</a></li>
                 </ul>

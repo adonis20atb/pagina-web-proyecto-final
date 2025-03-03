@@ -266,7 +266,7 @@ p {
 .card-1 h3 {
     font-size: 20px;
     margin: 0 0 10px 0;
-    color: #684f47;
+    color: #f14309;
 }
 
 .card-1 p {
@@ -379,7 +379,7 @@ h2 {
         top: 100%;
         left: 0;
         right: 0;
-        background-color: #ffbd4c;
+        background-color: #df4781;
         display: none;
     }
 
