@@ -129,7 +129,7 @@
             <div class="link">
                 <h3>Contacto</h3>
                 <ul>
-                    <li><a href="#">Dirección: Calle Galleta 123, Ciudad</a></li>
+                    <li><a href="#">Dirección: Los Fria </a></li>
                     <li><a href="#">Teléfono: +123 456 789</a></li>
                     <li><a href="#">Email: info@deliciouscookies.com</a></li>
                 </ul>
@@ -139,12 +139,25 @@
                 <ul>
                     <li><a href="#f">Instagram</a></li>
                     <li><a href="#">Facebook</a></li>
-                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Tiktok</a></li>
                 </ul>
             </div>
         </div>
     </footer>
 
     <script src="ja.js"></script>
+    <div id="chat-icon" onclick="toggleChat()">
+        <i class="fas fa-comment"></i>
+    </div>
+    <div id="chatbot" class="chatbot">
+        <div class="chat-header" onclick="toggleChat()">
+            <h3>Chat con nosotros</h3>
+            <span class="close-chat" onclick="toggleChat()">×</span>
+        </div>
+        <div class="chat-body" id="chat-body">
+            <div class="messages" id="messages"></div>
+            <input type="text" id="user-input" placeholder="Escribe un mensaje..." onkeypress="sendMessage(event)">
+        </div>
+    </div>
 </body>
 </html>
