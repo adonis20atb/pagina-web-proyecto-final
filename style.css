@@ -427,9 +427,7 @@ h2 {
     color: #e22717;
 }
 
-@media (max-width: 991px) 
-    .menu {
-        padding: 20px;}
+
 
     .menu label {
         display: initial;
