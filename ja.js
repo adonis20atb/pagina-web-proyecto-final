@@ -1,7 +1,8 @@
-// Carrito de Compras
+// Variables globales
 let cart = [];
 let cartCount = 0;
 
+// Función para añadir productos al carrito
 function addToCart(productName, price) {
     cart.push({ name: productName, price: price });
     cartCount++;
@@ -9,6 +10,7 @@ function addToCart(productName, price) {
     showNotification(`${productName} añadido al carrito.`);
 }
 
+// Función para actualizar el carrito
 function updateCart() {
     const cartItems = document.getElementById('cart-items');
     const cartTotal = document.getElementById('cart-total');
@@ -28,23 +30,37 @@ function updateCart() {
     cartCountElement.textContent = cartCount;
 }
 
+// Función para abrir el carrito
 function openCart() {
     document.getElementById('cart-modal').style.display = 'flex';
 }
 
+// Función para cerrar el carrito
 function closeCart() {
     document.getElementById('cart-modal').style.display = 'none';
 }
 
+// Función para abrir el menú de pago
+function openCheckout() {
+    document.getElementById('checkout-modal').style.display = 'flex';
+}
+
+// Función para cerrar el menú de pago
+function closeCheckout() {
+    document.getElementById('checkout-modal').style.display = 'none';
+}
+
+// Función para finalizar la compra
 function checkout() {
     alert('Gracias por tu compra!');
     cart = [];
     cartCount = 0;
     updateCart();
     closeCart();
+    closeCheckout();
 }
 
-// Notificaciones
+// Función para mostrar notificaciones
 function showNotification(message) {
     const notification = document.createElement('div');
     notification.className = 'notification';
@@ -55,6 +71,12 @@ function showNotification(message) {
         notification.remove();
     }, 3000);
 }
+
+// Evento para el formulario de pago
+document.getElementById('payment-form').addEventListener('submit', function (e) {
+    e.preventDefault();
+    checkout();
+});
 
 // Formulario de Contacto
 document.getElementById('contact-form').addEventListener('submit', function (e) {
