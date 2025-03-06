@@ -408,6 +408,7 @@ h2 {
 .footer-content {
     display: flex;
     justify-content: space-between;
+    
 }
 
 .link h3 {
