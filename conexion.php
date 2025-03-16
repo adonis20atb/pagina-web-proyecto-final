@@ -1,14 +1,14 @@
 <?php
-$servername = "127.0.0.1";
-$username = "root";
-$password = "";
-$dbname = "delicious_cookies";
+$host = 'localhost'; // o '127.0.0.1'
+$usuario = 'root'; // usuario por defecto de XAMPP
+$contraseña = 'adonis'; // contraseña por defecto de XAMPP (normalmente está vacía)
+$nombre_bd = 'registro'; // reemplaza con el nombre de tu base de datos
 
 // Crear conexión
-$conn = new mysqli($servername, $username, $password,$dbname);
+$conexion = new mysqli($host, $usuario, $contraseña, $nombre_bd);
 
 // Verificar conexión
-if ($conn->connect_error) {
-    die("Conexión fallida: " . $conn->connect_error);
+if ($conexion->connect_error) {
+    die("Conexión fallida: " . $conexion->connect_error);
 }
 ?>

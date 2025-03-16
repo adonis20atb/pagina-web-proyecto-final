@@ -121,16 +121,16 @@
         </form>
     </div>
 </div>
-    <!-- Sección de Contacto -->
-    <section id="contacto" class="contact">
-        <div class="contact-content container">
-            <h2>Contacto</h2>
-            <form id="contact-form" action="insertar.php" method="POST">
-                <input type="text" id="name" name="nombre" placeholder="Nombre" required>
-                <input type="email" id="email" name="email" placeholder="Correo Electrónico" required>
-                <textarea id="message" name="mensaje" placeholder="Mensaje" required></textarea>
-                <button type="submit" class="btn-1">Enviar Mensaje</button>
-            </form>
+<h2>Registro de Usuario</h2>
+    <form action="guardar.php" method="POST">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+        <label for="contraseña">Contraseña:</label>
+        <input type="password" id="contraseña" name="contraseña" required><br><br>
+        <input type="submit" value="Registrar">
+    </form>
             <p id="form-message"></p>
         </div>
     </section>
