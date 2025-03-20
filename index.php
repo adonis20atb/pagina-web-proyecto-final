@@ -39,6 +39,7 @@
     </header>
 
     <!-- Sección de Productos -->
+     
 <section id="productos" class="productos">
     <h2>Nuestros Productos</h2>
     <div class="search-filter">
@@ -51,6 +52,9 @@
             <option value="sin-gluten">Sin Gluten</option>
         </select>
     </div>
+    <div class="productos-grid">
+            <?php include("productos.php"); ?>
+        </div>
     <div class="productos-grid">
         <div class="producto-card" data-category="chocolate">
             <img src="1.jpg" alt="Galletas de Chocolate Chip">
