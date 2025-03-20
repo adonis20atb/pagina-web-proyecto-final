@@ -8,14 +8,20 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
+    
     <!-- Header -->
     <header class="header">
         <div class="menu container">
             <a href="#" class="logo">Delicious Cookies</a>
+            
             <input type="checkbox" id="menu"/>
             <label for="menu">
                 <i class="fas fa-bars menu-icono"></i>
             </label>
+            <div class="header-buttons">
+    <a href="registar.php" class="btn-1">Registrar</a>
+    <a href="login.php" class="btn-1">Iniciar Sesión</a>
+</div>
             <nav class="navbar">
                 <ul>
                     <li><a href="#inicio">Inicio</a></li>
@@ -125,20 +131,6 @@
         </form>
     </div>
 </div>
-<h2>Registro de Usuario</h2>
-    <form action="guardar.php" method="POST">
-        <label for="nombre">Nombre:</label>
-        <input type="text" id="nombre" name="nombre" required><br><br>
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required><br><br>
-        <label for="contraseña">Contraseña:</label>
-        <input type="password" id="contraseña" name="contraseña" required><br><br>
-        <input type="submit" value="Registrar">
-    </form>
-            <p id="form-message"></p>
-        </div>
-    </section>
-
     <!-- Footer -->
     <footer class="footer">
         <div class="footer-content container">
