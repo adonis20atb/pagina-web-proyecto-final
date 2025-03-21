@@ -19,6 +19,7 @@
                 <i class="fas fa-bars menu-icono"></i>
             </label>
             <div class="header-buttons">
+            <a href="login.php" class="btn-1">Admin</a>
     <a href="registar.php" class="btn-1">Registrar</a>
     <a href="login.php" class="btn-1">Iniciar Sesión</a>
 </div>

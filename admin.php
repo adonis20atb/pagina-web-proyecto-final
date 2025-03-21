@@ -5,7 +5,7 @@ if (!isset($_SESSION['admin_logged_in'])) {
     exit();
 }
 ?>
-
+<link rel="stylesheet" href="admin.css">
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -15,16 +15,52 @@ if (!isset($_SESSION['admin_logged_in'])) {
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Panel de Administración</h1>
-    <nav>
-        <ul>
-            <li><a href="admin.php">Inicio</a></li>
+    <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Panel de Administración</title>
+</head>
+<body>
+    <div class="admin-panel">
+        <header>
+            <h1>Panel de Administración</h1>
+            <nav>
+                <ul>
+                <li><a href="index.php">Inicio</a></li>
             <li><a href="manage_products.php">Gestionar Productos</a></li>
             <li><a href="manage_orders.php">Gestionar Pedidos</a></li>
             <li><a href="logout.php">Cerrar Sesión</a></li>
         </ul>
-    </nav>
-    <h2>Bienvenido, Administrador</h2>
-    <p>Desde aquí puedes gestionar los productos y pedidos de la tienda.</p>
+                </ul>
+            </nav>
+        </header>
+        <section id="usuarios">
+            <h2>Gestión de Usuarios</h2>
+            <button class="btn">Agregar Usuario</button>
+            <input type="text" placeholder="Buscar usuario..." class="search-bar">
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nombre</th>
+                        <th>Email</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Aquí se agregarían los usuarios dinámicamente -->
+                </tbody>
+            </table>
+        </section>
+        <footer>
+            <p>&copy; 2024 deliciues 2025</p>
+        </footer>
+    </div>
+</body>
+</html>
 </body>
 </html>
